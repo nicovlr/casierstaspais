@@ -142,13 +142,13 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <h1 className="text-xl font-semibold">Gestion des Casiers</h1>
+              <h1 className="text-xl font-semibold text-gray-700">Gestion des Casiers</h1>
             </div>
             <div className="flex items-center space-x-4">
               <input
                 type="search"
                 placeholder="Rechercher un élève..."
-                className="rounded-md border border-gray-300 px-3 py-2"
+                className="rounded-md border border-gray-300 px-3 py-2 text-gray-700"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -209,7 +209,7 @@ export default function Dashboard() {
             <div className="flex space-x-4">
               <div className="px-4 py-2 bg-white rounded-md shadow">
                 <span className="text-sm text-gray-500">Total:</span>
-                <span className="ml-2 font-semibold">{stats.total}</span>
+                <span className="ml-2 font-semibold text-gray-800">{stats.total}</span>
               </div>
               <div className="px-4 py-2 bg-blue-50 rounded-md shadow">
                 <span className="text-sm text-blue-600">Attribués:</span>
@@ -244,7 +244,7 @@ export default function Dashboard() {
                   return (
                     <div
                       key={index}
-                      className={`aspect-square ${getLockerColor(locker?.status)} rounded-md flex flex-col items-center justify-center cursor-pointer p-1`}
+                      className={`aspect-square ${getLockerColor(locker?.status)} rounded-md flex flex-col items-center justify-center cursor-pointer p-1 text-gray-800`}
                       onClick={() => locker && handleLockerClick(locker)}
                     >
                       <span className="font-medium">{buildingRange.start + index}</span>
