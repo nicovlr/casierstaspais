@@ -88,6 +88,9 @@ export default function Dashboard() {
     setIsStudentDetailsOpen(true);
   };
 
+
+  
+
   const handleDeleteStudent = (student: Student) => {
     if (confirm(`Voulez-vous vraiment supprimer l'élève ${student.firstName} ${student.lastName} ?`)) {
       store.removeStudent(student.id);
@@ -391,3 +394,5 @@ export default function Dashboard() {
 
 
 // C'est juste un push pour rien mdrrr
+//push maj eleves 
+
